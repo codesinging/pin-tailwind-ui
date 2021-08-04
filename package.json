@@ -7,7 +7,8 @@
         "build": "nuxt build",
         "start": "nuxt start",
         "generate": "nuxt generate",
-        "icons:build": "gulp buildIcons"
+        "icons:build": "gulp buildIcons",
+        "demos:watch": "gulp buildDemoCodes"
     },
     "dependencies": {
         "core-js": "^3.15.1",
@@ -19,7 +20,7 @@
         "@nuxtjs/tailwindcss": "^4.2.0",
         "del": "^6.0.0",
         "gulp": "^4.0.2",
-        "lodash.kebabcase": "^4.1.1",
+        "lodash": "^4.17.21",
         "postcss": "^8.3.5",
         "vue": "^2.6.14"
     }

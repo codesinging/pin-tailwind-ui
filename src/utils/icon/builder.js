@@ -1,10 +1,11 @@
 const path = require('path')
 const fs = require('fs')
 const del = require('del')
-const kebab = require('lodash.kebabcase')
+const kebab = require('lodash/kebabCase')
 
 const iconPark = require('@icon-park/svg')
 const sources = require('./sources')
+const basePath = require('../../../basePath')
 
 class Builder {
     prefix = 'PinIcon'
@@ -21,7 +22,7 @@ class Builder {
     indexesFilename = ''
 
     constructor() {
-        this.srcDir = path.resolve(__dirname, '..')
+        this.srcDir = basePath('src')
         this.stubDir = path.resolve(__dirname, 'stubs')
         this.destDir = path.resolve(this.srcDir, 'components/icon')
         this.indexesFilename = path.resolve(this.destDir, 'indexes.js')

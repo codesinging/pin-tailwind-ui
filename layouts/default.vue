@@ -34,6 +34,7 @@
             </div>
             <div class="flex-1 ml-8 py-6 overflow-hidden">
                 <nuxt/>
+                <page-nav/>
             </div>
         </div>
     </div>
