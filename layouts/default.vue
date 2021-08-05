@@ -16,7 +16,7 @@
         </div>
         <div class="mt-header max-w-7xl mx-auto px-4 flex">
             <div class="w-64">
-                <div class="fixed w-64 overflow-y-auto h-(screen-header) border-r py-2">
+                <div class="sidebar fixed w-64 overflow-y-auto h-(screen-header) border-r py-2">
                     <template v-for="(menu,index) in menus">
                         <div v-if="menu.children" :key="index" class="">
                             <div class="text-gray-400 text-sm flex items-center h-8">{{ menu.name }}</div>
@@ -33,7 +33,7 @@
                 </div>
             </div>
             <div class="flex-1 ml-8 py-6 overflow-hidden">
-                <nuxt/>
+                <nuxt class="markdown-body"/>
                 <page-nav/>
             </div>
         </div>
@@ -53,7 +53,7 @@ export default {
 </script>
 
 <style scoped>
-    .nuxt-link-exact-active{
+    .sidebar .nuxt-link-exact-active{
         @apply border-r-2 border-green-500;
     }
 </style>

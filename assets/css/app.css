@@ -1,3 +1,7 @@
 @import "./base/link.css";
 @import "./base/svg.css";
 @import "./utilities/screen.css";
+
+@import "./vendor/github-markdown.css";
+/*@import "./vendor/github-markdown-tailwindcss.css";*/
+/*@import "./vendor/markdown-tailwind-gatsby.css";*/
